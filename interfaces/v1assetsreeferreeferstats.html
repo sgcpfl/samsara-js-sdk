@@ -1,0 +1,344 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>V1AssetsReeferReeferStats | samsara-js-sdk</title>
+	<meta name="description" content="Documentation for samsara-js-sdk">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">samsara-js-sdk</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">samsara-js-sdk</a>
+				</li>
+				<li>
+					<a href="v1assetsreeferreeferstats.html">V1AssetsReeferReeferStats</a>
+				</li>
+			</ul>
+			<h1>Interface V1AssetsReeferReeferStats</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Contains all the state changes of the reefer for the included stat types. Each state change is recorded independently, so the number of records in each array may differ depending on when that stat changed state. Stat types with a continuous value (such as temperature) will be recorded at different rates depending on the reefer, but generally readings have a frequency on the order of seconds.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>export</dt>
+						<dd></dd>
+						<dt>interface</dt>
+						<dd><p>V1AssetsReeferReeferStats</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">V1AssetsReeferReeferStats</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#ambientairtemperature" class="tsd-kind-icon">ambient<wbr>Air<wbr>Temperature</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#dischargeairtemperature" class="tsd-kind-icon">discharge<wbr>Air<wbr>Temperature</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#enginehours" class="tsd-kind-icon">engine<wbr>Hours</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#fuelpercentage" class="tsd-kind-icon">fuel<wbr>Percentage</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#powerstatus" class="tsd-kind-icon">power<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#reeferalarms" class="tsd-kind-icon">reefer<wbr>Alarms</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#returnairtemperature" class="tsd-kind-icon">return<wbr>Air<wbr>Temperature</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="v1assetsreeferreeferstats.html#setpoint" class="tsd-kind-icon">set<wbr>Point</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ambientairtemperature" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ambient<wbr>Air<wbr>Temperature</h3>
+					<div class="tsd-signature tsd-kind-icon">ambient<wbr>Air<wbr>Temperature<span class="tsd-signature-symbol">:</span> <a href="v1assetsreeferreeferstatsambientairtemperature.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetsReeferReeferStatsAmbientAirTemperature</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18794">api.ts:18794</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Ambient temperature of the reefer. This is the temperature of the air around the Samsara Asset Gateway.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dischargeairtemperature" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> discharge<wbr>Air<wbr>Temperature</h3>
+					<div class="tsd-signature tsd-kind-icon">discharge<wbr>Air<wbr>Temperature<span class="tsd-signature-symbol">:</span> <a href="v1assetsreeferreeferstatsdischargeairtemperature.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetsReeferReeferStatsDischargeAirTemperature</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18800">api.ts:18800</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Discharge air temperature of the reefer. This is the temperature of the air as it leaves the cooling unit.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="enginehours" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> engine<wbr>Hours</h3>
+					<div class="tsd-signature tsd-kind-icon">engine<wbr>Hours<span class="tsd-signature-symbol">:</span> <a href="v1assetreeferresponsereeferstatsenginehours.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetReeferResponseReeferStatsEngineHours</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18806">api.ts:18806</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Engine hours of the reefer</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fuelpercentage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fuel<wbr>Percentage</h3>
+					<div class="tsd-signature tsd-kind-icon">fuel<wbr>Percentage<span class="tsd-signature-symbol">:</span> <a href="v1assetreeferresponsereeferstatsfuelpercentage.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetReeferResponseReeferStatsFuelPercentage</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18812">api.ts:18812</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fuel percentage of the reefer</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="powerstatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> power<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">power<wbr>Status<span class="tsd-signature-symbol">:</span> <a href="v1assetsreeferreeferstatspowerstatus.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetsReeferReeferStatsPowerStatus</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18818">api.ts:18818</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Power status of the reefer</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="reeferalarms" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> reefer<wbr>Alarms</h3>
+					<div class="tsd-signature tsd-kind-icon">reefer<wbr>Alarms<span class="tsd-signature-symbol">:</span> <a href="v1assetreeferresponsereeferstatsalarms1.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetReeferResponseReeferStatsAlarms1</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18824">api.ts:18824</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Reefer alarms</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="returnairtemperature" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> return<wbr>Air<wbr>Temperature</h3>
+					<div class="tsd-signature tsd-kind-icon">return<wbr>Air<wbr>Temperature<span class="tsd-signature-symbol">:</span> <a href="v1assetreeferresponsereeferstatsreturnairtemp.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetReeferResponseReeferStatsReturnAirTemp</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18830">api.ts:18830</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Return air temperature of the reefer. This is the temperature read by the reefer module (Carrier, Thermo King) that shows the temperature of the air as it enters the system.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="setpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> set<wbr>Point</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Point<span class="tsd-signature-symbol">:</span> <a href="v1assetreeferresponsereeferstatssetpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">V1AssetReeferResponseReeferStatsSetPoint</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sgcpfl/samsara-js-sdk/blob/04e0f51/src/generated/api.ts#L18836">api.ts:18836</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set point temperature of the reefer</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>memberof</dt>
+							<dd><p>V1AssetsReeferReeferStats</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="v1assetsreeferreeferstats.html" class="tsd-kind-icon">V1<wbr>Assets<wbr>Reefer<wbr>Reefer<wbr>Stats</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#ambientairtemperature" class="tsd-kind-icon">ambient<wbr>Air<wbr>Temperature</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#dischargeairtemperature" class="tsd-kind-icon">discharge<wbr>Air<wbr>Temperature</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#enginehours" class="tsd-kind-icon">engine<wbr>Hours</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#fuelpercentage" class="tsd-kind-icon">fuel<wbr>Percentage</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#powerstatus" class="tsd-kind-icon">power<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#reeferalarms" class="tsd-kind-icon">reefer<wbr>Alarms</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#returnairtemperature" class="tsd-kind-icon">return<wbr>Air<wbr>Temperature</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="v1assetsreeferreeferstats.html#setpoint" class="tsd-kind-icon">set<wbr>Point</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
