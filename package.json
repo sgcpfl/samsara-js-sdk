@@ -1,37 +1,44 @@
 {
   "name": "samsara-js-sdk",
   "version": "1.0.0",
-  "description": "auto generated typescript/js sdk for samsara.com api",
+  "description": "Unofficial auto generated typescript/js sdk for samsara.com api",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
+  "sideEffects": false,
   "repository": "https://github.com/sgcpfl/samsara-js-sdk",
   "license": "MIT",
-  "keywords": ["samsara"],
+  "keywords": [
+    "samsara"
+  ],
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
-    "doc": "run-s doc:html && open-cli build/docs/index.html",
-    "doc:html": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --out build/docs",
-    "doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
-    "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
+    "doc": "run-s doc:html && open-cli docs/index.html",
+    "doc:html": "typedoc --out docs src/generated/api.ts",
+    "doc:json": "typedoc --json docs/typedoc.json src/generated/api.ts",
+    "doc:publish": "run-p doc:html doc:json && gh-pages -m \"[ci skip] Updates\" -d docs",
+    "generate": "run-s generate:client doc:html doc:json",
+    "generate:client": "./generate.sh",
     "version": "standard-version",
     "reset-hard": "git clean -dfx && git reset --hard && yarn",
-    "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
+    "prepare-release": "run-s reset-hard doc:html version doc:publish"
   },
   "engines": {
     "node": ">=10"
   },
   "dependencies": {},
   "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.2.6",
+    "@types/node": "^15.0.2",
     "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "open-cli": "^6.0.1",
-    "standard-version": "^9.0.0",
-    "ts-node": "^9.0.0",
-    "typedoc": "^0.19.0",
-    "typescript": "^4.0.2"
+    "standard-version": "^9.3.0",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.36",
+    "typescript": "^4.2.4"
   },
   "files": [
     "build/main",
