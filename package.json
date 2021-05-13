@@ -21,9 +21,8 @@
     "doc:publish": "run-p doc:html doc:json && gh-pages -m \"[ci skip] Updates\" -d docs",
     "generate": "run-s generate:client doc:html doc:json",
     "generate:client": "./generate.sh",
-    "version": "standard-version",
     "reset-hard": "git clean -dfx && git reset --hard && yarn",
-    "prepare-release": "run-s reset-hard doc:html version doc:publish"
+    "prepare-release": "run-s reset-hard doc:publish"
   },
   "engines": {
     "node": ">=10"
@@ -35,7 +34,6 @@
     "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "open-cli": "^6.0.1",
-    "standard-version": "^9.3.0",
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
