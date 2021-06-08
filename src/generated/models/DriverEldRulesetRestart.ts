@@ -18,6 +18,7 @@
  * @enum {string}
  */
 export enum DriverEldRulesetRestart {
+    None = 'None',
     _34HourRestart = '34-hour Restart',
     _24HourRestart = '24-hour Restart',
     _36HourRestart = '36-hour Restart',

@@ -18,10 +18,14 @@ import {
     CreateDriverRequestAttributesFromJSON,
     CreateDriverRequestAttributesFromJSONTyped,
     CreateDriverRequestAttributesToJSON,
-    CreateDriverRequestCarrierSettings,
-    CreateDriverRequestCarrierSettingsFromJSON,
-    CreateDriverRequestCarrierSettingsFromJSONTyped,
-    CreateDriverRequestCarrierSettingsToJSON,
+    DriverCarrierSettings,
+    DriverCarrierSettingsFromJSON,
+    DriverCarrierSettingsFromJSONTyped,
+    DriverCarrierSettingsToJSON,
+    UsDriverRulesetOverride,
+    UsDriverRulesetOverrideFromJSON,
+    UsDriverRulesetOverrideFromJSONTyped,
+    UsDriverRulesetOverrideToJSON,
 } from './';
 
 /**
@@ -38,10 +42,10 @@ export interface CreateDriverRequest {
     attributes?: Array<CreateDriverRequestAttributes>;
     /**
      * 
-     * @type {CreateDriverRequestCarrierSettings}
+     * @type {DriverCarrierSettings}
      * @memberof CreateDriverRequest
      */
-    carrierSettings?: CreateDriverRequestCarrierSettings;
+    carrierSettings?: DriverCarrierSettings;
     /**
      * The ID Card Code on the back of the physical card assigned to the driver.  Contact Samsara if you would like to enable this feature.
      * @type {string}
@@ -163,6 +167,12 @@ export interface CreateDriverRequest {
      */
     timezone?: string;
     /**
+     * 
+     * @type {UsDriverRulesetOverride}
+     * @memberof CreateDriverRequest
+     */
+    usDriverRulesetOverride?: UsDriverRulesetOverride;
+    /**
      * Driver's login username into the driver app. The username may not contain spaces or the '@' symbol. The username must be unique.
      * @type {string}
      * @memberof CreateDriverRequest
@@ -209,7 +219,7 @@ export function CreateDriverRequestFromJSONTyped(json: any, ignoreDiscriminator:
     return {
         
         'attributes': !exists(json, 'attributes') ? undefined : ((json['attributes'] as Array<any>).map(CreateDriverRequestAttributesFromJSON)),
-        'carrierSettings': !exists(json, 'carrierSettings') ? undefined : CreateDriverRequestCarrierSettingsFromJSON(json['carrierSettings']),
+        'carrierSettings': !exists(json, 'carrierSettings') ? undefined : DriverCarrierSettingsFromJSON(json['carrierSettings']),
         'currentIdCardCode': !exists(json, 'currentIdCardCode') ? undefined : json['currentIdCardCode'],
         'eldAdverseWeatherExemptionEnabled': !exists(json, 'eldAdverseWeatherExemptionEnabled') ? undefined : json['eldAdverseWeatherExemptionEnabled'],
         'eldBigDayExemptionEnabled': !exists(json, 'eldBigDayExemptionEnabled') ? undefined : json['eldBigDayExemptionEnabled'],
@@ -230,6 +240,7 @@ export function CreateDriverRequestFromJSONTyped(json: any, ignoreDiscriminator:
         'tachographCardNumber': !exists(json, 'tachographCardNumber') ? undefined : json['tachographCardNumber'],
         'tagIds': !exists(json, 'tagIds') ? undefined : json['tagIds'],
         'timezone': !exists(json, 'timezone') ? undefined : json['timezone'],
+        'usDriverRulesetOverride': !exists(json, 'usDriverRulesetOverride') ? undefined : UsDriverRulesetOverrideFromJSON(json['usDriverRulesetOverride']),
         'username': json['username'],
         'vehicleGroupTagId': !exists(json, 'vehicleGroupTagId') ? undefined : json['vehicleGroupTagId'],
     };
@@ -245,7 +256,7 @@ export function CreateDriverRequestToJSON(value?: CreateDriverRequest | null): a
     return {
         
         'attributes': value.attributes === undefined ? undefined : ((value.attributes as Array<any>).map(CreateDriverRequestAttributesToJSON)),
-        'carrierSettings': CreateDriverRequestCarrierSettingsToJSON(value.carrierSettings),
+        'carrierSettings': DriverCarrierSettingsToJSON(value.carrierSettings),
         'currentIdCardCode': value.currentIdCardCode,
         'eldAdverseWeatherExemptionEnabled': value.eldAdverseWeatherExemptionEnabled,
         'eldBigDayExemptionEnabled': value.eldBigDayExemptionEnabled,
@@ -266,6 +277,7 @@ export function CreateDriverRequestToJSON(value?: CreateDriverRequest | null): a
         'tachographCardNumber': value.tachographCardNumber,
         'tagIds': value.tagIds,
         'timezone': value.timezone,
+        'usDriverRulesetOverride': UsDriverRulesetOverrideToJSON(value.usDriverRulesetOverride),
         'username': value.username,
         'vehicleGroupTagId': value.vehicleGroupTagId,
     };

@@ -178,7 +178,14 @@ export enum UpdateVehicleRequestAuxInputType1Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -197,7 +204,14 @@ export enum UpdateVehicleRequestAuxInputType10Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -216,7 +230,14 @@ export enum UpdateVehicleRequestAuxInputType2Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -235,7 +256,14 @@ export enum UpdateVehicleRequestAuxInputType3Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -254,7 +282,14 @@ export enum UpdateVehicleRequestAuxInputType4Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -273,7 +308,14 @@ export enum UpdateVehicleRequestAuxInputType5Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -292,7 +334,14 @@ export enum UpdateVehicleRequestAuxInputType6Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -311,7 +360,14 @@ export enum UpdateVehicleRequestAuxInputType7Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -330,7 +386,14 @@ export enum UpdateVehicleRequestAuxInputType8Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}
@@ -349,7 +412,14 @@ export enum UpdateVehicleRequestAuxInputType9Enum {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }/**
 * @export
 * @enum {string}

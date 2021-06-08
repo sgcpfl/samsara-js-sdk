@@ -14,10 +14,18 @@
 
 import { exists, mapValues } from '../runtime';
 import {
+    AccessoryResponseObjectResponseBody,
+    AccessoryResponseObjectResponseBodyFromJSON,
+    AccessoryResponseObjectResponseBodyFromJSONTyped,
+    AccessoryResponseObjectResponseBodyToJSON,
     ConnectionStatusResponseObjectResponseBody,
     ConnectionStatusResponseObjectResponseBodyFromJSON,
     ConnectionStatusResponseObjectResponseBodyFromJSONTyped,
     ConnectionStatusResponseObjectResponseBodyToJSON,
+    DataUsageResponseObjectResponseBody,
+    DataUsageResponseObjectResponseBodyFromJSON,
+    DataUsageResponseObjectResponseBodyFromJSONTyped,
+    DataUsageResponseObjectResponseBodyToJSON,
     GatewayAssetResponseObjectResponseBody,
     GatewayAssetResponseObjectResponseBodyFromJSON,
     GatewayAssetResponseObjectResponseBodyFromJSONTyped,
@@ -31,6 +39,12 @@ import {
  */
 export interface GatewayResponseObjectResponseBody {
     /**
+     * Accessory devices on gateway
+     * @type {Array<AccessoryResponseObjectResponseBody>}
+     * @memberof GatewayResponseObjectResponseBody
+     */
+    accessoryDevices?: Array<AccessoryResponseObjectResponseBody>;
+    /**
      * 
      * @type {GatewayAssetResponseObjectResponseBody}
      * @memberof GatewayResponseObjectResponseBody
@@ -42,6 +56,12 @@ export interface GatewayResponseObjectResponseBody {
      * @memberof GatewayResponseObjectResponseBody
      */
     connectionStatus?: ConnectionStatusResponseObjectResponseBody;
+    /**
+     * 
+     * @type {DataUsageResponseObjectResponseBody}
+     * @memberof GatewayResponseObjectResponseBody
+     */
+    dataUsageLast30Days?: DataUsageResponseObjectResponseBody;
     /**
      * The model of the gateway installed on the asset.
      * @type {string}
@@ -143,8 +163,10 @@ export function GatewayResponseObjectResponseBodyFromJSONTyped(json: any, ignore
     }
     return {
         
+        'accessoryDevices': !exists(json, 'accessoryDevices') ? undefined : ((json['accessoryDevices'] as Array<any>).map(AccessoryResponseObjectResponseBodyFromJSON)),
         'asset': !exists(json, 'asset') ? undefined : GatewayAssetResponseObjectResponseBodyFromJSON(json['asset']),
         'connectionStatus': !exists(json, 'connectionStatus') ? undefined : ConnectionStatusResponseObjectResponseBodyFromJSON(json['connectionStatus']),
+        'dataUsageLast30Days': !exists(json, 'dataUsageLast30Days') ? undefined : DataUsageResponseObjectResponseBodyFromJSON(json['dataUsageLast30Days']),
         'model': json['model'],
         'serial': json['serial'],
     };
@@ -159,8 +181,10 @@ export function GatewayResponseObjectResponseBodyToJSON(value?: GatewayResponseO
     }
     return {
         
+        'accessoryDevices': value.accessoryDevices === undefined ? undefined : ((value.accessoryDevices as Array<any>).map(AccessoryResponseObjectResponseBodyToJSON)),
         'asset': GatewayAssetResponseObjectResponseBodyToJSON(value.asset),
         'connectionStatus': ConnectionStatusResponseObjectResponseBodyToJSON(value.connectionStatus),
+        'dataUsageLast30Days': DataUsageResponseObjectResponseBodyToJSON(value.dataUsageLast30Days),
         'model': value.model,
         'serial': value.serial,
     };

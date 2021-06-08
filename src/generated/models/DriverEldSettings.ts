@@ -27,7 +27,7 @@ import {
  */
 export interface DriverEldSettings {
     /**
-     * The driver's ELD rulesets and overrides.
+     * The driver's ELD rulesets and overrides. This is the full set of rulesets that may apply to the driver depending on their activity. If you wish to interface with the specific US driver override, use the usDriverRulesetOverride field.
      * @type {Array<DriverEldRuleset>}
      * @memberof DriverEldSettings
      */

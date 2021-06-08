@@ -14,10 +14,10 @@
 
 import { exists, mapValues } from '../runtime';
 import {
-    VehicleAuxInputType,
-    VehicleAuxInputTypeFromJSON,
-    VehicleAuxInputTypeFromJSONTyped,
-    VehicleAuxInputTypeToJSON,
+    VehicleAuxInputName,
+    VehicleAuxInputNameFromJSON,
+    VehicleAuxInputNameFromJSONTyped,
+    VehicleAuxInputNameToJSON,
 } from './';
 
 /**
@@ -28,10 +28,10 @@ import {
 export interface VehicleStatsAuxInput {
     /**
      * 
-     * @type {VehicleAuxInputType}
+     * @type {VehicleAuxInputName}
      * @memberof VehicleStatsAuxInput
      */
-    name?: VehicleAuxInputType;
+    name?: VehicleAuxInputName;
     /**
      * UTC timestamp in RFC 3339 format. Example: `2020-01-27T07:06:25Z`.
      * @type {string}
@@ -56,7 +56,7 @@ export function VehicleStatsAuxInputFromJSONTyped(json: any, ignoreDiscriminator
     }
     return {
         
-        'name': !exists(json, 'name') ? undefined : VehicleAuxInputTypeFromJSON(json['name']),
+        'name': !exists(json, 'name') ? undefined : VehicleAuxInputNameFromJSON(json['name']),
         'time': !exists(json, 'time') ? undefined : json['time'],
         'value': !exists(json, 'value') ? undefined : json['value'],
     };
@@ -71,7 +71,7 @@ export function VehicleStatsAuxInputToJSON(value?: VehicleStatsAuxInput | null):
     }
     return {
         
-        'name': VehicleAuxInputTypeToJSON(value.name),
+        'name': VehicleAuxInputNameToJSON(value.name),
         'time': value.time,
         'value': value.value,
     };

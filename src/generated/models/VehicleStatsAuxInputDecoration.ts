@@ -38,20 +38,27 @@ export interface VehicleStatsAuxInputDecoration {
 * @enum {string}
 */
 export enum VehicleStatsAuxInputDecorationNameEnum {
-    None = 'none',
-    EmergencyLights = 'emergencyLights',
-    EmergencyAlarm = 'emergencyAlarm',
-    StopPaddle = 'stopPaddle',
-    PowerTakeOff = 'powerTakeOff',
-    Plow = 'plow',
-    Sweeper = 'sweeper',
-    Salter = 'salter',
-    Reefer = 'reefer',
-    Door = 'door',
-    Boom = 'boom',
-    AuxiliaryEngine = 'auxiliaryEngine',
-    Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    None = 'None',
+    EmergencyLights = 'Emergency Lights',
+    EmergencyAlarm = 'Emergency Alarm',
+    StopPaddle = 'Stop Paddle',
+    PowerTakeOff = 'Power Take-Off',
+    Plow = 'Plow',
+    Sweeper = 'Sweeper',
+    Salter = 'Salter',
+    Reefer = 'Reefer',
+    Door = 'Door',
+    Boom = 'Boom',
+    AuxiliaryEngine = 'Auxiliary Engine',
+    Generator = 'Generator',
+    EightWayLights = 'Eight-Way Lights',
+    PanicButton = 'Panic Button',
+    PrivacyButton = 'Privacy Button',
+    FrontAxleDrive = 'Front Axle Drive',
+    WeightSensor = 'Weight Sensor',
+    Other = 'Other',
+    SecondaryFuelSource = 'Secondary Fuel Source',
+    EcuPowerTakeOff = '(ECU) Power Take-Off'
 }
 
 export function VehicleStatsAuxInputDecorationFromJSON(json: any): VehicleStatsAuxInputDecoration {

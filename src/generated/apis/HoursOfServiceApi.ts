@@ -285,7 +285,7 @@ export class HoursOfServiceApi extends runtime.BaseAPI {
         headerParameters['Content-Type'] = 'application/json';
 
         const response = await this.request({
-            path: `/v1/fleet/drivers/{driver_id}/duty_status`.replace(`{${"driver_id"}}`, encodeURIComponent(String(requestParameters.driverId))),
+            path: `/v1/fleet/drivers/{driver_id}/hos/duty_status`.replace(`{${"driver_id"}}`, encodeURIComponent(String(requestParameters.driverId))),
             method: 'POST',
             headers: headerParameters,
             query: queryParameters,

@@ -31,7 +31,14 @@ export enum VehicleAuxInputType {
     Boom = 'boom',
     AuxiliaryEngine = 'auxiliaryEngine',
     Generator = 'generator',
-    EightWayLights = 'eightWayLights'
+    EightWayLights = 'eightWayLights',
+    PanicButton = 'panicButton',
+    PrivacyButton = 'privacyButton',
+    FrontAxleDrive = 'frontAxleDrive',
+    WeightSensor = 'weightSensor',
+    Other = 'other',
+    SecondaryFuelSource = 'secondaryFuelSource',
+    EcuPowerTakeOff = 'ecuPowerTakeOff'
 }
 
 export function VehicleAuxInputTypeFromJSON(json: any): VehicleAuxInputType {

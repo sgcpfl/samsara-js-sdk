@@ -32,6 +32,18 @@ export interface DriverCarrierSettings {
      */
     dotNumber?: number;
     /**
+     * Address of the place of business at which a driver ordinarily reports for work.
+     * @type {string}
+     * @memberof DriverCarrierSettings
+     */
+    homeTerminalAddress?: string;
+    /**
+     * Name of the place of business at which a driver ordinarily reports for work.
+     * @type {string}
+     * @memberof DriverCarrierSettings
+     */
+    homeTerminalName?: string;
+    /**
      * Main office address for a given driver. If this differs from the general organization's settings, the override value is used. 
      * @type {string}
      * @memberof DriverCarrierSettings
@@ -51,6 +63,8 @@ export function DriverCarrierSettingsFromJSONTyped(json: any, ignoreDiscriminato
         
         'carrierName': !exists(json, 'carrierName') ? undefined : json['carrierName'],
         'dotNumber': !exists(json, 'dotNumber') ? undefined : json['dotNumber'],
+        'homeTerminalAddress': !exists(json, 'homeTerminalAddress') ? undefined : json['homeTerminalAddress'],
+        'homeTerminalName': !exists(json, 'homeTerminalName') ? undefined : json['homeTerminalName'],
         'mainOfficeAddress': !exists(json, 'mainOfficeAddress') ? undefined : json['mainOfficeAddress'],
     };
 }
@@ -66,6 +80,8 @@ export function DriverCarrierSettingsToJSON(value?: DriverCarrierSettings | null
         
         'carrierName': value.carrierName,
         'dotNumber': value.dotNumber,
+        'homeTerminalAddress': value.homeTerminalAddress,
+        'homeTerminalName': value.homeTerminalName,
         'mainOfficeAddress': value.mainOfficeAddress,
     };
 }

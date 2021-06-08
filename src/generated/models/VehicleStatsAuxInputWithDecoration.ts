@@ -14,10 +14,10 @@
 
 import { exists, mapValues } from '../runtime';
 import {
-    VehicleAuxInputType,
-    VehicleAuxInputTypeFromJSON,
-    VehicleAuxInputTypeFromJSONTyped,
-    VehicleAuxInputTypeToJSON,
+    VehicleAuxInputName,
+    VehicleAuxInputNameFromJSON,
+    VehicleAuxInputNameFromJSONTyped,
+    VehicleAuxInputNameToJSON,
     VehicleStatsDecorations,
     VehicleStatsDecorationsFromJSON,
     VehicleStatsDecorationsFromJSONTyped,
@@ -38,10 +38,10 @@ export interface VehicleStatsAuxInputWithDecoration {
     decorations?: VehicleStatsDecorations;
     /**
      * 
-     * @type {VehicleAuxInputType}
+     * @type {VehicleAuxInputName}
      * @memberof VehicleStatsAuxInputWithDecoration
      */
-    name?: VehicleAuxInputType;
+    name?: VehicleAuxInputName;
     /**
      * UTC timestamp in RFC 3339 format. Example: `2020-01-27T07:06:25Z`.
      * @type {string}
@@ -67,7 +67,7 @@ export function VehicleStatsAuxInputWithDecorationFromJSONTyped(json: any, ignor
     return {
         
         'decorations': !exists(json, 'decorations') ? undefined : VehicleStatsDecorationsFromJSON(json['decorations']),
-        'name': !exists(json, 'name') ? undefined : VehicleAuxInputTypeFromJSON(json['name']),
+        'name': !exists(json, 'name') ? undefined : VehicleAuxInputNameFromJSON(json['name']),
         'time': !exists(json, 'time') ? undefined : json['time'],
         'value': !exists(json, 'value') ? undefined : json['value'],
     };
@@ -83,7 +83,7 @@ export function VehicleStatsAuxInputWithDecorationToJSON(value?: VehicleStatsAux
     return {
         
         'decorations': VehicleStatsDecorationsToJSON(value.decorations),
-        'name': VehicleAuxInputTypeToJSON(value.name),
+        'name': VehicleAuxInputNameToJSON(value.name),
         'time': value.time,
         'value': value.value,
     };

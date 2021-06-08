@@ -56,6 +56,12 @@ export interface MinimalRouteStopResponseBody {
      */
     id: string;
     /**
+     * The shareable url of the stop's current status.
+     * @type {string}
+     * @memberof MinimalRouteStopResponseBody
+     */
+    liveSharingUrl?: string;
+    /**
      * Skipped time, if it exists, for the route stop in RFC 3339 format.
      * @type {Date}
      * @memberof MinimalRouteStopResponseBody
@@ -98,6 +104,7 @@ export function MinimalRouteStopResponseBodyFromJSONTyped(json: any, ignoreDiscr
         'eta': !exists(json, 'eta') ? undefined : (new Date(json['eta'])),
         'externalIds': !exists(json, 'externalIds') ? undefined : json['externalIds'],
         'id': json['id'],
+        'liveSharingUrl': !exists(json, 'liveSharingUrl') ? undefined : json['liveSharingUrl'],
         'skippedTime': !exists(json, 'skippedTime') ? undefined : (new Date(json['skippedTime'])),
         'state': json['state'],
     };
@@ -118,6 +125,7 @@ export function MinimalRouteStopResponseBodyToJSON(value?: MinimalRouteStopRespo
         'eta': value.eta === undefined ? undefined : (value.eta.toISOString()),
         'externalIds': value.externalIds,
         'id': value.id,
+        'liveSharingUrl': value.liveSharingUrl,
         'skippedTime': value.skippedTime === undefined ? undefined : (value.skippedTime.toISOString()),
         'state': value.state,
     };

@@ -24,50 +24,206 @@ import {
     DocumentPdfQueryResponse,
     DocumentPdfQueryResponseFromJSON,
     DocumentPdfQueryResponseToJSON,
+    DocumentTypesGetDocumentTypesBadGatewayErrorResponseBody,
+    DocumentTypesGetDocumentTypesBadGatewayErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesBadGatewayErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesBadRequestErrorResponseBody,
+    DocumentTypesGetDocumentTypesBadRequestErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesBadRequestErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesGatewayTimeoutErrorResponseBody,
+    DocumentTypesGetDocumentTypesGatewayTimeoutErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesGatewayTimeoutErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesInternalServerErrorResponseBody,
+    DocumentTypesGetDocumentTypesInternalServerErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesInternalServerErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesMethodNotAllowedErrorResponseBody,
+    DocumentTypesGetDocumentTypesMethodNotAllowedErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesMethodNotAllowedErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesNotFoundErrorResponseBody,
+    DocumentTypesGetDocumentTypesNotFoundErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesNotFoundErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesNotImplementedErrorResponseBody,
+    DocumentTypesGetDocumentTypesNotImplementedErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesNotImplementedErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesResponseBody,
+    DocumentTypesGetDocumentTypesResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesServiceUnavailableErrorResponseBody,
+    DocumentTypesGetDocumentTypesServiceUnavailableErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesServiceUnavailableErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesTooManyRequestsErrorResponseBody,
+    DocumentTypesGetDocumentTypesTooManyRequestsErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesTooManyRequestsErrorResponseBodyToJSON,
+    DocumentTypesGetDocumentTypesUnauthorizedErrorResponseBody,
+    DocumentTypesGetDocumentTypesUnauthorizedErrorResponseBodyFromJSON,
+    DocumentTypesGetDocumentTypesUnauthorizedErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentBadGatewayErrorResponseBody,
+    DocumentsDeleteDocumentBadGatewayErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentBadGatewayErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentBadRequestErrorResponseBody,
+    DocumentsDeleteDocumentBadRequestErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentBadRequestErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentGatewayTimeoutErrorResponseBody,
+    DocumentsDeleteDocumentGatewayTimeoutErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentGatewayTimeoutErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentInternalServerErrorResponseBody,
+    DocumentsDeleteDocumentInternalServerErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentInternalServerErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentMethodNotAllowedErrorResponseBody,
+    DocumentsDeleteDocumentMethodNotAllowedErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentMethodNotAllowedErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentNotFoundErrorResponseBody,
+    DocumentsDeleteDocumentNotFoundErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentNotFoundErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentNotImplementedErrorResponseBody,
+    DocumentsDeleteDocumentNotImplementedErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentNotImplementedErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentServiceUnavailableErrorResponseBody,
+    DocumentsDeleteDocumentServiceUnavailableErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentServiceUnavailableErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentTooManyRequestsErrorResponseBody,
+    DocumentsDeleteDocumentTooManyRequestsErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentTooManyRequestsErrorResponseBodyToJSON,
+    DocumentsDeleteDocumentUnauthorizedErrorResponseBody,
+    DocumentsDeleteDocumentUnauthorizedErrorResponseBodyFromJSON,
+    DocumentsDeleteDocumentUnauthorizedErrorResponseBodyToJSON,
+    DocumentsGetDocumentBadGatewayErrorResponseBody,
+    DocumentsGetDocumentBadGatewayErrorResponseBodyFromJSON,
+    DocumentsGetDocumentBadGatewayErrorResponseBodyToJSON,
+    DocumentsGetDocumentBadRequestErrorResponseBody,
+    DocumentsGetDocumentBadRequestErrorResponseBodyFromJSON,
+    DocumentsGetDocumentBadRequestErrorResponseBodyToJSON,
+    DocumentsGetDocumentGatewayTimeoutErrorResponseBody,
+    DocumentsGetDocumentGatewayTimeoutErrorResponseBodyFromJSON,
+    DocumentsGetDocumentGatewayTimeoutErrorResponseBodyToJSON,
+    DocumentsGetDocumentInternalServerErrorResponseBody,
+    DocumentsGetDocumentInternalServerErrorResponseBodyFromJSON,
+    DocumentsGetDocumentInternalServerErrorResponseBodyToJSON,
+    DocumentsGetDocumentMethodNotAllowedErrorResponseBody,
+    DocumentsGetDocumentMethodNotAllowedErrorResponseBodyFromJSON,
+    DocumentsGetDocumentMethodNotAllowedErrorResponseBodyToJSON,
+    DocumentsGetDocumentNotFoundErrorResponseBody,
+    DocumentsGetDocumentNotFoundErrorResponseBodyFromJSON,
+    DocumentsGetDocumentNotFoundErrorResponseBodyToJSON,
+    DocumentsGetDocumentNotImplementedErrorResponseBody,
+    DocumentsGetDocumentNotImplementedErrorResponseBodyFromJSON,
+    DocumentsGetDocumentNotImplementedErrorResponseBodyToJSON,
+    DocumentsGetDocumentResponseBody,
+    DocumentsGetDocumentResponseBodyFromJSON,
+    DocumentsGetDocumentResponseBodyToJSON,
+    DocumentsGetDocumentServiceUnavailableErrorResponseBody,
+    DocumentsGetDocumentServiceUnavailableErrorResponseBodyFromJSON,
+    DocumentsGetDocumentServiceUnavailableErrorResponseBodyToJSON,
+    DocumentsGetDocumentTooManyRequestsErrorResponseBody,
+    DocumentsGetDocumentTooManyRequestsErrorResponseBodyFromJSON,
+    DocumentsGetDocumentTooManyRequestsErrorResponseBodyToJSON,
+    DocumentsGetDocumentUnauthorizedErrorResponseBody,
+    DocumentsGetDocumentUnauthorizedErrorResponseBodyFromJSON,
+    DocumentsGetDocumentUnauthorizedErrorResponseBodyToJSON,
+    DocumentsGetDocumentsBadGatewayErrorResponseBody,
+    DocumentsGetDocumentsBadGatewayErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsBadGatewayErrorResponseBodyToJSON,
+    DocumentsGetDocumentsBadRequestErrorResponseBody,
+    DocumentsGetDocumentsBadRequestErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsBadRequestErrorResponseBodyToJSON,
+    DocumentsGetDocumentsGatewayTimeoutErrorResponseBody,
+    DocumentsGetDocumentsGatewayTimeoutErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsGatewayTimeoutErrorResponseBodyToJSON,
+    DocumentsGetDocumentsInternalServerErrorResponseBody,
+    DocumentsGetDocumentsInternalServerErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsInternalServerErrorResponseBodyToJSON,
+    DocumentsGetDocumentsMethodNotAllowedErrorResponseBody,
+    DocumentsGetDocumentsMethodNotAllowedErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsMethodNotAllowedErrorResponseBodyToJSON,
+    DocumentsGetDocumentsNotFoundErrorResponseBody,
+    DocumentsGetDocumentsNotFoundErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsNotFoundErrorResponseBodyToJSON,
+    DocumentsGetDocumentsNotImplementedErrorResponseBody,
+    DocumentsGetDocumentsNotImplementedErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsNotImplementedErrorResponseBodyToJSON,
+    DocumentsGetDocumentsResponseBody,
+    DocumentsGetDocumentsResponseBodyFromJSON,
+    DocumentsGetDocumentsResponseBodyToJSON,
+    DocumentsGetDocumentsServiceUnavailableErrorResponseBody,
+    DocumentsGetDocumentsServiceUnavailableErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsServiceUnavailableErrorResponseBodyToJSON,
+    DocumentsGetDocumentsTooManyRequestsErrorResponseBody,
+    DocumentsGetDocumentsTooManyRequestsErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsTooManyRequestsErrorResponseBodyToJSON,
+    DocumentsGetDocumentsUnauthorizedErrorResponseBody,
+    DocumentsGetDocumentsUnauthorizedErrorResponseBodyFromJSON,
+    DocumentsGetDocumentsUnauthorizedErrorResponseBodyToJSON,
+    DocumentsPostDocumentBadGatewayErrorResponseBody,
+    DocumentsPostDocumentBadGatewayErrorResponseBodyFromJSON,
+    DocumentsPostDocumentBadGatewayErrorResponseBodyToJSON,
+    DocumentsPostDocumentBadRequestErrorResponseBody,
+    DocumentsPostDocumentBadRequestErrorResponseBodyFromJSON,
+    DocumentsPostDocumentBadRequestErrorResponseBodyToJSON,
+    DocumentsPostDocumentGatewayTimeoutErrorResponseBody,
+    DocumentsPostDocumentGatewayTimeoutErrorResponseBodyFromJSON,
+    DocumentsPostDocumentGatewayTimeoutErrorResponseBodyToJSON,
+    DocumentsPostDocumentInternalServerErrorResponseBody,
+    DocumentsPostDocumentInternalServerErrorResponseBodyFromJSON,
+    DocumentsPostDocumentInternalServerErrorResponseBodyToJSON,
+    DocumentsPostDocumentMethodNotAllowedErrorResponseBody,
+    DocumentsPostDocumentMethodNotAllowedErrorResponseBodyFromJSON,
+    DocumentsPostDocumentMethodNotAllowedErrorResponseBodyToJSON,
+    DocumentsPostDocumentNotFoundErrorResponseBody,
+    DocumentsPostDocumentNotFoundErrorResponseBodyFromJSON,
+    DocumentsPostDocumentNotFoundErrorResponseBodyToJSON,
+    DocumentsPostDocumentNotImplementedErrorResponseBody,
+    DocumentsPostDocumentNotImplementedErrorResponseBodyFromJSON,
+    DocumentsPostDocumentNotImplementedErrorResponseBodyToJSON,
+    DocumentsPostDocumentRequestBody,
+    DocumentsPostDocumentRequestBodyFromJSON,
+    DocumentsPostDocumentRequestBodyToJSON,
+    DocumentsPostDocumentResponseBody,
+    DocumentsPostDocumentResponseBodyFromJSON,
+    DocumentsPostDocumentResponseBodyToJSON,
+    DocumentsPostDocumentServiceUnavailableErrorResponseBody,
+    DocumentsPostDocumentServiceUnavailableErrorResponseBodyFromJSON,
+    DocumentsPostDocumentServiceUnavailableErrorResponseBodyToJSON,
+    DocumentsPostDocumentTooManyRequestsErrorResponseBody,
+    DocumentsPostDocumentTooManyRequestsErrorResponseBodyFromJSON,
+    DocumentsPostDocumentTooManyRequestsErrorResponseBodyToJSON,
+    DocumentsPostDocumentUnauthorizedErrorResponseBody,
+    DocumentsPostDocumentUnauthorizedErrorResponseBodyFromJSON,
+    DocumentsPostDocumentUnauthorizedErrorResponseBodyToJSON,
     StandardErrorResponse,
     StandardErrorResponseFromJSON,
     StandardErrorResponseToJSON,
-    V1Document,
-    V1DocumentFromJSON,
-    V1DocumentToJSON,
-    V1DocumentCreate,
-    V1DocumentCreateFromJSON,
-    V1DocumentCreateToJSON,
-    V1DocumentType,
-    V1DocumentTypeFromJSON,
-    V1DocumentTypeToJSON,
-    V1Documents,
-    V1DocumentsFromJSON,
-    V1DocumentsToJSON,
 } from '../models';
 
-export interface DeleteDriverDocumentByIdAndDriverIdRequest {
-    driverId: number;
-    documentId: string;
+export interface DeleteDocumentRequest {
+    id: string;
 }
 
 export interface GenerateDocumentPdfRequest {
     document?: DocumentPdfGenerationRequest;
 }
 
+export interface GetDocumentRequest {
+    id: string;
+}
+
 export interface GetDocumentPdfRequest {
     id: string;
 }
 
-export interface V1createDriverDocumentRequest {
-    driverId: number;
-    createDocumentParams: V1DocumentCreate;
+export interface GetDocumentTypesRequest {
+    after?: string;
 }
 
-export interface V1getDriverDocumentByIdAndDriverIdRequest {
-    driverId: number;
-    documentId: string;
+export interface GetDocumentsRequest {
+    startTime: string;
+    endTime: string;
+    after?: string;
+    documentTypeId?: string;
+    queryBy?: string;
 }
 
-export interface V1getDriverDocumentsByOrgIdRequest {
-    endMs?: number;
-    durationMs?: number;
-    queryBy?: V1getDriverDocumentsByOrgIdQueryByEnum;
+export interface PostDocumentRequest {
+    postDocumentRequestBody: DocumentsPostDocumentRequestBody;
 }
 
 /**
@@ -76,16 +232,12 @@ export interface V1getDriverDocumentsByOrgIdRequest {
 export class DocumentsApi extends runtime.BaseAPI {
 
     /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Deletes a single document submission by driver.
-     * Delete a document
+     * Deletes a single document. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/deleteDriverDocumentByIdAndDriverId).
+     * Delete document
      */
-    async deleteDriverDocumentByIdAndDriverIdRaw(requestParameters: DeleteDriverDocumentByIdAndDriverIdRequest): Promise<runtime.ApiResponse<void>> {
-        if (requestParameters.driverId === null || requestParameters.driverId === undefined) {
-            throw new runtime.RequiredError('driverId','Required parameter requestParameters.driverId was null or undefined when calling deleteDriverDocumentByIdAndDriverId.');
-        }
-
-        if (requestParameters.documentId === null || requestParameters.documentId === undefined) {
-            throw new runtime.RequiredError('documentId','Required parameter requestParameters.documentId was null or undefined when calling deleteDriverDocumentByIdAndDriverId.');
+    async deleteDocumentRaw(requestParameters: DeleteDocumentRequest): Promise<runtime.ApiResponse<void>> {
+        if (requestParameters.id === null || requestParameters.id === undefined) {
+            throw new runtime.RequiredError('id','Required parameter requestParameters.id was null or undefined when calling deleteDocument.');
         }
 
         const queryParameters: any = {};
@@ -93,7 +245,7 @@ export class DocumentsApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         const response = await this.request({
-            path: `/v1/fleet/drivers/{driver_id}/documents/{document_id}`.replace(`{${"driver_id"}}`, encodeURIComponent(String(requestParameters.driverId))).replace(`{${"document_id"}}`, encodeURIComponent(String(requestParameters.documentId))),
+            path: `/fleet/documents/{id}`.replace(`{${"id"}}`, encodeURIComponent(String(requestParameters.id))),
             method: 'DELETE',
             headers: headerParameters,
             query: queryParameters,
@@ -103,11 +255,11 @@ export class DocumentsApi extends runtime.BaseAPI {
     }
 
     /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Deletes a single document submission by driver.
-     * Delete a document
+     * Deletes a single document. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/deleteDriverDocumentByIdAndDriverId).
+     * Delete document
      */
-    async deleteDriverDocumentByIdAndDriverId(requestParameters: DeleteDriverDocumentByIdAndDriverIdRequest): Promise<void> {
-        await this.deleteDriverDocumentByIdAndDriverIdRaw(requestParameters);
+    async deleteDocument(requestParameters: DeleteDocumentRequest): Promise<void> {
+        await this.deleteDocumentRaw(requestParameters);
     }
 
     /**
@@ -138,6 +290,38 @@ export class DocumentsApi extends runtime.BaseAPI {
      */
     async generateDocumentPdf(requestParameters: GenerateDocumentPdfRequest): Promise<DocumentPdfGenerationResponse> {
         const response = await this.generateDocumentPdfRaw(requestParameters);
+        return await response.value();
+    }
+
+    /**
+     * Returns a single document. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/getDriverDocumentByIdAndDriverId).
+     * Fetch document
+     */
+    async getDocumentRaw(requestParameters: GetDocumentRequest): Promise<runtime.ApiResponse<DocumentsGetDocumentResponseBody>> {
+        if (requestParameters.id === null || requestParameters.id === undefined) {
+            throw new runtime.RequiredError('id','Required parameter requestParameters.id was null or undefined when calling getDocument.');
+        }
+
+        const queryParameters: any = {};
+
+        const headerParameters: runtime.HTTPHeaders = {};
+
+        const response = await this.request({
+            path: `/fleet/documents/{id}`.replace(`{${"id"}}`, encodeURIComponent(String(requestParameters.id))),
+            method: 'GET',
+            headers: headerParameters,
+            query: queryParameters,
+        });
+
+        return new runtime.JSONApiResponse(response, (jsonValue) => DocumentsGetDocumentResponseBodyFromJSON(jsonValue));
+    }
+
+    /**
+     * Returns a single document. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/getDriverDocumentByIdAndDriverId).
+     * Fetch document
+     */
+    async getDocument(requestParameters: GetDocumentRequest): Promise<DocumentsGetDocumentResponseBody> {
+        const response = await this.getDocumentRaw(requestParameters);
         return await response.value();
     }
 
@@ -174,121 +358,66 @@ export class DocumentsApi extends runtime.BaseAPI {
     }
 
     /**
-     * <n class=\"warning\">   <nh>     <i class=\"fa fa-exclamation-circle\"></i>     This endpoint is still on our legacy API.   </nh> </n>  Create a driver document for the given driver.  You can create a document in one of two states: \"Required\" or \"Submitted\":  - Setting the document state to \"Submitted\" will submit the document on behalf of the driver. - Setting the document state to \"Required\" will create a pre-populated document for the driver to fill out in the Driver App.  **Populating document fields**  You  populate a document\'s fields according to the document\'s *document type*. You can retrieve document types using the [Fetch document types](ref:v1getdriverdocumenttypesbyorgid) endpoint.  You must populate a document\'s fields using the field *labels* and *value types*, and the fields must be listed in the exact same order that they appear in the document type.  **Omitting Field Values**  If you _omit a field\'s **value**_, Samsara will populate the field with a default value. (Note: you must still list the field in your request). For example, the following request omits the `numberValue` for the `\"Number Field\"`.  ``` {   \"documentTypeUuid\": \"79008acc-56d6-49f4-b5d2-4101ce4b497c\",   \"fields\": [     {       \"label\": \"Number Field\",       \"valueType\": \"ValueType_Number\",     }   ] } ```  Samsara will automatically populate the field with the default for number fields: `0`. See the defaults for all field types below.  > Note: The `dateTimeValue` for `ValueType_DateTime` fields **cannot** be omitted. If you\'d like to populate this field with a default datetime value, you must submit `\"dateTimeValue\": {}` for that field.  **Default Field Values**  | Value Type | Field Name | Default value | | :--------- | :--------- | :------------ | | `ValueType_Number` | `numberValue` | `0` | | `ValueType_String` | `stringValue` | `\"\"` | | `ValueType_Photo` | `photoValue` | `[]` | | `ValueType_MultipleChoice` | `multipleChoiceValue` | `[]` | | `ValueType_DateTime` | `dateTimeValue` | `{\"dateTimeMs\": 0}` | | `ValueType_Signature` | `signatureValue` | `{\"name\": \"Name\", \"signedAtMs\": 0, \"url\": \"\"}` | | `ValueType_Barcode` | `barcodeValue` | `[]` |  > Note: `ValueType_ScannedDocument` fields return `ValueType_Photo`/`photoValue` fields, whose default is listed above.
-     * Create a document
+     * Returns a list of the organization document types. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/getDriverDocumentTypesByOrgId).
+     * Fetch document types
      */
-    async v1createDriverDocumentRaw(requestParameters: V1createDriverDocumentRequest): Promise<runtime.ApiResponse<V1Document>> {
-        if (requestParameters.driverId === null || requestParameters.driverId === undefined) {
-            throw new runtime.RequiredError('driverId','Required parameter requestParameters.driverId was null or undefined when calling v1createDriverDocument.');
-        }
-
-        if (requestParameters.createDocumentParams === null || requestParameters.createDocumentParams === undefined) {
-            throw new runtime.RequiredError('createDocumentParams','Required parameter requestParameters.createDocumentParams was null or undefined when calling v1createDriverDocument.');
-        }
-
+    async getDocumentTypesRaw(requestParameters: GetDocumentTypesRequest): Promise<runtime.ApiResponse<DocumentTypesGetDocumentTypesResponseBody>> {
         const queryParameters: any = {};
 
-        const headerParameters: runtime.HTTPHeaders = {};
-
-        headerParameters['Content-Type'] = 'application/json';
-
-        const response = await this.request({
-            path: `/v1/fleet/drivers/{driver_id}/documents`.replace(`{${"driver_id"}}`, encodeURIComponent(String(requestParameters.driverId))),
-            method: 'POST',
-            headers: headerParameters,
-            query: queryParameters,
-            body: V1DocumentCreateToJSON(requestParameters.createDocumentParams),
-        });
-
-        return new runtime.JSONApiResponse(response, (jsonValue) => V1DocumentFromJSON(jsonValue));
-    }
-
-    /**
-     * <n class=\"warning\">   <nh>     <i class=\"fa fa-exclamation-circle\"></i>     This endpoint is still on our legacy API.   </nh> </n>  Create a driver document for the given driver.  You can create a document in one of two states: \"Required\" or \"Submitted\":  - Setting the document state to \"Submitted\" will submit the document on behalf of the driver. - Setting the document state to \"Required\" will create a pre-populated document for the driver to fill out in the Driver App.  **Populating document fields**  You  populate a document\'s fields according to the document\'s *document type*. You can retrieve document types using the [Fetch document types](ref:v1getdriverdocumenttypesbyorgid) endpoint.  You must populate a document\'s fields using the field *labels* and *value types*, and the fields must be listed in the exact same order that they appear in the document type.  **Omitting Field Values**  If you _omit a field\'s **value**_, Samsara will populate the field with a default value. (Note: you must still list the field in your request). For example, the following request omits the `numberValue` for the `\"Number Field\"`.  ``` {   \"documentTypeUuid\": \"79008acc-56d6-49f4-b5d2-4101ce4b497c\",   \"fields\": [     {       \"label\": \"Number Field\",       \"valueType\": \"ValueType_Number\",     }   ] } ```  Samsara will automatically populate the field with the default for number fields: `0`. See the defaults for all field types below.  > Note: The `dateTimeValue` for `ValueType_DateTime` fields **cannot** be omitted. If you\'d like to populate this field with a default datetime value, you must submit `\"dateTimeValue\": {}` for that field.  **Default Field Values**  | Value Type | Field Name | Default value | | :--------- | :--------- | :------------ | | `ValueType_Number` | `numberValue` | `0` | | `ValueType_String` | `stringValue` | `\"\"` | | `ValueType_Photo` | `photoValue` | `[]` | | `ValueType_MultipleChoice` | `multipleChoiceValue` | `[]` | | `ValueType_DateTime` | `dateTimeValue` | `{\"dateTimeMs\": 0}` | | `ValueType_Signature` | `signatureValue` | `{\"name\": \"Name\", \"signedAtMs\": 0, \"url\": \"\"}` | | `ValueType_Barcode` | `barcodeValue` | `[]` |  > Note: `ValueType_ScannedDocument` fields return `ValueType_Photo`/`photoValue` fields, whose default is listed above.
-     * Create a document
-     */
-    async v1createDriverDocument(requestParameters: V1createDriverDocumentRequest): Promise<V1Document> {
-        const response = await this.v1createDriverDocumentRaw(requestParameters);
-        return await response.value();
-    }
-
-    /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Fetches a single document submission by a specific driver.
-     * Fetches a document
-     */
-    async v1getDriverDocumentByIdAndDriverIdRaw(requestParameters: V1getDriverDocumentByIdAndDriverIdRequest): Promise<runtime.ApiResponse<V1Document>> {
-        if (requestParameters.driverId === null || requestParameters.driverId === undefined) {
-            throw new runtime.RequiredError('driverId','Required parameter requestParameters.driverId was null or undefined when calling v1getDriverDocumentByIdAndDriverId.');
+        if (requestParameters.after !== undefined) {
+            queryParameters['after'] = requestParameters.after;
         }
-
-        if (requestParameters.documentId === null || requestParameters.documentId === undefined) {
-            throw new runtime.RequiredError('documentId','Required parameter requestParameters.documentId was null or undefined when calling v1getDriverDocumentByIdAndDriverId.');
-        }
-
-        const queryParameters: any = {};
 
         const headerParameters: runtime.HTTPHeaders = {};
 
         const response = await this.request({
-            path: `/v1/fleet/drivers/{driver_id}/documents/{document_id}`.replace(`{${"driver_id"}}`, encodeURIComponent(String(requestParameters.driverId))).replace(`{${"document_id"}}`, encodeURIComponent(String(requestParameters.documentId))),
+            path: `/fleet/document-types`,
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
         });
 
-        return new runtime.JSONApiResponse(response, (jsonValue) => V1DocumentFromJSON(jsonValue));
+        return new runtime.JSONApiResponse(response, (jsonValue) => DocumentTypesGetDocumentTypesResponseBodyFromJSON(jsonValue));
     }
 
     /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Fetches a single document submission by a specific driver.
-     * Fetches a document
+     * Returns a list of the organization document types. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/getDriverDocumentTypesByOrgId).
+     * Fetch document types
      */
-    async v1getDriverDocumentByIdAndDriverId(requestParameters: V1getDriverDocumentByIdAndDriverIdRequest): Promise<V1Document> {
-        const response = await this.v1getDriverDocumentByIdAndDriverIdRaw(requestParameters);
+    async getDocumentTypes(requestParameters: GetDocumentTypesRequest): Promise<DocumentTypesGetDocumentTypesResponseBody> {
+        const response = await this.getDocumentTypesRaw(requestParameters);
         return await response.value();
     }
 
     /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Fetch all of the document types.
-     * Fetch document types
-     */
-    async v1getDriverDocumentTypesByOrgIdRaw(): Promise<runtime.ApiResponse<Array<V1DocumentType>>> {
-        const queryParameters: any = {};
-
-        const headerParameters: runtime.HTTPHeaders = {};
-
-        const response = await this.request({
-            path: `/v1/fleet/drivers/document_types`,
-            method: 'GET',
-            headers: headerParameters,
-            query: queryParameters,
-        });
-
-        return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(V1DocumentTypeFromJSON));
-    }
-
-    /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Fetch all of the document types.
-     * Fetch document types
-     */
-    async v1getDriverDocumentTypesByOrgId(): Promise<Array<V1DocumentType>> {
-        const response = await this.v1getDriverDocumentTypesByOrgIdRaw();
-        return await response.value();
-    }
-
-    /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Fetch all of the documents.
+     * Get all documents for the given time range. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/getDriverDocumentsByOrgId).
      * Fetch all documents
      */
-    async v1getDriverDocumentsByOrgIdRaw(requestParameters: V1getDriverDocumentsByOrgIdRequest): Promise<runtime.ApiResponse<V1Documents>> {
-        const queryParameters: any = {};
-
-        if (requestParameters.endMs !== undefined) {
-            queryParameters['endMs'] = requestParameters.endMs;
+    async getDocumentsRaw(requestParameters: GetDocumentsRequest): Promise<runtime.ApiResponse<DocumentsGetDocumentsResponseBody>> {
+        if (requestParameters.startTime === null || requestParameters.startTime === undefined) {
+            throw new runtime.RequiredError('startTime','Required parameter requestParameters.startTime was null or undefined when calling getDocuments.');
         }
 
-        if (requestParameters.durationMs !== undefined) {
-            queryParameters['durationMs'] = requestParameters.durationMs;
+        if (requestParameters.endTime === null || requestParameters.endTime === undefined) {
+            throw new runtime.RequiredError('endTime','Required parameter requestParameters.endTime was null or undefined when calling getDocuments.');
+        }
+
+        const queryParameters: any = {};
+
+        if (requestParameters.startTime !== undefined) {
+            queryParameters['startTime'] = requestParameters.startTime;
+        }
+
+        if (requestParameters.endTime !== undefined) {
+            queryParameters['endTime'] = requestParameters.endTime;
+        }
+
+        if (requestParameters.after !== undefined) {
+            queryParameters['after'] = requestParameters.after;
+        }
+
+        if (requestParameters.documentTypeId !== undefined) {
+            queryParameters['documentTypeId'] = requestParameters.documentTypeId;
         }
 
         if (requestParameters.queryBy !== undefined) {
@@ -298,31 +427,57 @@ export class DocumentsApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         const response = await this.request({
-            path: `/v1/fleet/drivers/documents`,
+            path: `/fleet/documents`,
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,
         });
 
-        return new runtime.JSONApiResponse(response, (jsonValue) => V1DocumentsFromJSON(jsonValue));
+        return new runtime.JSONApiResponse(response, (jsonValue) => DocumentsGetDocumentsResponseBodyFromJSON(jsonValue));
     }
 
     /**
-     * <n class=\"warning\"> <nh> <i class=\"fa fa-exclamation-circle\"></i> This endpoint is still on our legacy API. </nh> </n>  Fetch all of the documents.
+     * Get all documents for the given time range. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/getDriverDocumentsByOrgId).
      * Fetch all documents
      */
-    async v1getDriverDocumentsByOrgId(requestParameters: V1getDriverDocumentsByOrgIdRequest): Promise<V1Documents> {
-        const response = await this.v1getDriverDocumentsByOrgIdRaw(requestParameters);
+    async getDocuments(requestParameters: GetDocumentsRequest): Promise<DocumentsGetDocumentsResponseBody> {
+        const response = await this.getDocumentsRaw(requestParameters);
         return await response.value();
     }
 
-}
+    /**
+     * Creates a single document. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/createDriverDocument).
+     * Create document
+     */
+    async postDocumentRaw(requestParameters: PostDocumentRequest): Promise<runtime.ApiResponse<DocumentsPostDocumentResponseBody>> {
+        if (requestParameters.postDocumentRequestBody === null || requestParameters.postDocumentRequestBody === undefined) {
+            throw new runtime.RequiredError('postDocumentRequestBody','Required parameter requestParameters.postDocumentRequestBody was null or undefined when calling postDocument.');
+        }
 
-/**
-    * @export
-    * @enum {string}
-    */
-export enum V1getDriverDocumentsByOrgIdQueryByEnum {
-    Created = 'created',
-    Updated = 'updated'
+        const queryParameters: any = {};
+
+        const headerParameters: runtime.HTTPHeaders = {};
+
+        headerParameters['Content-Type'] = 'application/json';
+
+        const response = await this.request({
+            path: `/fleet/documents`,
+            method: 'POST',
+            headers: headerParameters,
+            query: queryParameters,
+            body: DocumentsPostDocumentRequestBodyToJSON(requestParameters.postDocumentRequestBody),
+        });
+
+        return new runtime.JSONApiResponse(response, (jsonValue) => DocumentsPostDocumentResponseBodyFromJSON(jsonValue));
+    }
+
+    /**
+     * Creates a single document. The legacy version of this endpoint can be found at [samsara.com/api-legacy](https://www.samsara.com/api-legacy#operation/createDriverDocument).
+     * Create document
+     */
+    async postDocument(requestParameters: PostDocumentRequest): Promise<DocumentsPostDocumentResponseBody> {
+        const response = await this.postDocumentRaw(requestParameters);
+        return await response.value();
+    }
+
 }

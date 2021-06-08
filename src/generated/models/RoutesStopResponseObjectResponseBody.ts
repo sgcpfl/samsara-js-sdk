@@ -83,6 +83,12 @@ export interface RoutesStopResponseObjectResponseBody {
      */
     id: string;
     /**
+     * The shareable url of the stop's current status.
+     * @type {string}
+     * @memberof RoutesStopResponseObjectResponseBody
+     */
+    liveSharingUrl?: string;
+    /**
      * Name of the stop
      * @type {string}
      * @memberof RoutesStopResponseObjectResponseBody
@@ -157,6 +163,7 @@ export function RoutesStopResponseObjectResponseBodyFromJSONTyped(json: any, ign
         'eta': !exists(json, 'eta') ? undefined : (new Date(json['eta'])),
         'externalIds': !exists(json, 'externalIds') ? undefined : json['externalIds'],
         'id': json['id'],
+        'liveSharingUrl': !exists(json, 'liveSharingUrl') ? undefined : json['liveSharingUrl'],
         'name': json['name'],
         'notes': !exists(json, 'notes') ? undefined : json['notes'],
         'scheduledArrivalTime': !exists(json, 'scheduledArrivalTime') ? undefined : (new Date(json['scheduledArrivalTime'])),
@@ -184,6 +191,7 @@ export function RoutesStopResponseObjectResponseBodyToJSON(value?: RoutesStopRes
         'eta': value.eta === undefined ? undefined : (value.eta.toISOString()),
         'externalIds': value.externalIds,
         'id': value.id,
+        'liveSharingUrl': value.liveSharingUrl,
         'name': value.name,
         'notes': value.notes,
         'scheduledArrivalTime': value.scheduledArrivalTime === undefined ? undefined : (value.scheduledArrivalTime.toISOString()),

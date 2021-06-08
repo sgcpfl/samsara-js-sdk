@@ -46,6 +46,10 @@ import {
     TagTinyResponseFromJSON,
     TagTinyResponseFromJSONTyped,
     TagTinyResponseToJSON,
+    UsDriverRulesetOverride,
+    UsDriverRulesetOverrideFromJSON,
+    UsDriverRulesetOverrideFromJSONTyped,
+    UsDriverRulesetOverrideToJSON,
 } from './';
 
 /**
@@ -217,6 +221,12 @@ export interface Driver {
      */
     updatedAtTime?: string;
     /**
+     * 
+     * @type {UsDriverRulesetOverride}
+     * @memberof Driver
+     */
+    usDriverRulesetOverride?: UsDriverRulesetOverride;
+    /**
      * Driver's login username into the driver app. The username may not contain spaces or the '@' symbol. The username must be unique.
      * @type {string}
      * @memberof Driver
@@ -267,6 +277,7 @@ export function DriverFromJSONTyped(json: any, ignoreDiscriminator: boolean): Dr
         'tags': !exists(json, 'tags') ? undefined : ((json['tags'] as Array<any>).map(TagTinyResponseFromJSON)),
         'timezone': !exists(json, 'timezone') ? undefined : json['timezone'],
         'updatedAtTime': !exists(json, 'updatedAtTime') ? undefined : json['updatedAtTime'],
+        'usDriverRulesetOverride': !exists(json, 'usDriverRulesetOverride') ? undefined : UsDriverRulesetOverrideFromJSON(json['usDriverRulesetOverride']),
         'username': !exists(json, 'username') ? undefined : json['username'],
         'vehicleGroupTag': !exists(json, 'vehicleGroupTag') ? undefined : DriverVehicleGroupTagFromJSON(json['vehicleGroupTag']),
     };
@@ -308,6 +319,7 @@ export function DriverToJSON(value?: Driver | null): any {
         'tags': value.tags === undefined ? undefined : ((value.tags as Array<any>).map(TagTinyResponseToJSON)),
         'timezone': value.timezone,
         'updatedAtTime': value.updatedAtTime,
+        'usDriverRulesetOverride': UsDriverRulesetOverrideToJSON(value.usDriverRulesetOverride),
         'username': value.username,
         'vehicleGroupTag': DriverVehicleGroupTagToJSON(value.vehicleGroupTag),
     };

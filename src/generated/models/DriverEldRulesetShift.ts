@@ -18,8 +18,9 @@
  * @enum {string}
  */
 export enum DriverEldRulesetShift {
-    Property = 'US Interstate Property',
-    Passenger = 'US Interstate Passenger'
+    UsInterstateProperty = 'US Interstate Property',
+    UsInterstatePassenger = 'US Interstate Passenger',
+    TexasIntrastate = 'Texas Intrastate'
 }
 
 export function DriverEldRulesetShiftFromJSON(json: any): DriverEldRulesetShift {
