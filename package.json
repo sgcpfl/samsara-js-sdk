@@ -1,6 +1,6 @@
 {
   "name": "samsara-js-sdk",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Experimental and unofficial auto generated typescript/js sdk for samsara.com api",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
