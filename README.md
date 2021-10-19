@@ -43,4 +43,4 @@ api.listAddresses({
 ```
 
 ## Version
-Generated from [https://github.com/samsarahq/api-docs/tree/930b673defa672485820380fbad362fb00de0056](https://github.com/samsarahq/api-docs/tree/930b673defa672485820380fbad362fb00de0056)
+Generated from [https://github.com/samsarahq/api-docs/tree/f42d8b7a2c447c659464c427bb6dd42884fc0f11](https://github.com/samsarahq/api-docs/tree/f42d8b7a2c447c659464c427bb6dd42884fc0f11)
